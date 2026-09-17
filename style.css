@@ -1,0 +1,62 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+div h1{
+    position: absolute; 
+    letter-spacing: 20px;
+    font-size: 4.5rem;
+    font-weight: 300;
+    top: 20%;          /* Move o texto para o meio da altura */
+    left: 50%;         /* Move o texto para o meio da largura */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente o texto */
+    color: white;      /* Cor do texto para contraste */
+    font-size: 60px;   /* Tamanho da letra */
+    text-align: center;
+}
+
+.materia {
+    position: absolute; /* Retira o texto do fluxo normal e o posiciona sobre a imagem */
+    top: 40%;          /* Move o texto para o meio da altura */
+    left: 50%;         /* Move o texto para o meio da largura */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente o texto */
+    color: white;      /* Cor do texto para contraste */
+    font-size: 25px;   /* Tamanho da letra */
+    text-align: center;
+}
+
+h2 {
+    position: absolute; /* Retira o texto do fluxo normal e o posiciona sobre a imagem */
+    top: 50%;          /* Move o texto para o meio da altura */
+    left: 50%;         /* Move o texto para o meio da largura */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente o texto */
+    color: white;      /* Cor do texto para contraste */
+    font-size: 20px;   /* Tamanho da letra */
+    text-align: center;
+}
+
+h3 {
+    position: absolute; /* Retira o texto do fluxo normal e o posiciona sobre a imagem */
+    top: 60%;          /* Move o texto para o meio da altura */
+    left: 50%;         /* Move o texto para o meio da largura */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente o texto */
+    color: white;      /* Cor do texto para contraste */
+    font-size: 20px;   /* Tamanho da letra */
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+}
