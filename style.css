@@ -7,14 +7,20 @@
     
 }
 
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero-atelie.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 ul {
     list-style: none;
 }
 
-div h1{
+h1{
     position: absolute; 
     letter-spacing: 20px;
-    font-size: 4.5rem;
     font-weight: 300;
     top: 20%;          /* Move o texto para o meio da altura */
     left: 50%;         /* Move o texto para o meio da largura */
@@ -34,7 +40,7 @@ div h1{
     text-align: center;
 }
 
-h2 {
+.estudio {
     position: absolute; /* Retira o texto do fluxo normal e o posiciona sobre a imagem */
     top: 50%;          /* Move o texto para o meio da altura */
     left: 50%;         /* Move o texto para o meio da largura */
@@ -44,7 +50,7 @@ h2 {
     text-align: center;
 }
 
-h3 {
+.ano {
     position: absolute; /* Retira o texto do fluxo normal e o posiciona sobre a imagem */
     top: 60%;          /* Move o texto para o meio da altura */
     left: 50%;         /* Move o texto para o meio da largura */
@@ -52,11 +58,4 @@ h3 {
     color: white;      /* Cor do texto para contraste */
     font-size: 20px;   /* Tamanho da letra */
     text-align: center;
-}
-
-img {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    background-position: center; /* Centraliza a imagem */
 }
