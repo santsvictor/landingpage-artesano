@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesano</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="hero">
+        <img src="img/hero-atelie.jpg" alt="artesão esculpindo uma peça">
+
+        <div>
+            <h1>ARTESANO</h1>
+            <h2>MATÉRIA | LUZ | ESPAÇO</h2>
+            <p>ESTÚDIO DE OBJETOS | EDIÇÃO DE INVERNO</p>
+            <p><span>- 2026 -</span></p>
+        </div>
+    </section>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#" class="menu-link">INICIO</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">ESTÚDIO</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">COLEÇÕES</a>
+            </li>
+            <li class="menu-item" id="menu-logo">
+                <a href="#" class="menu-link">A</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">GALERIA</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">DEPOIMENTO</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">CONTATO</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ESTÚDIO -->
+    <section id="estudio" class="light">
+        <h2 class="section-title">Fazemos objetos que duram mais que nós.</h2>
+        <p>Um estudio pequeno em uma rua sem saida, barro,
+            madeira e vidro trabalhados devagar,em edições curtas.
+            Cada peça sai numerada, assinada e com o nome de quem a fez no verso.
+        </p>
+        <div id="estudio-itens">
+            <div>
+                <img src="img/icone-materia.svg" alt="">
+                <span>materia</span>
+            </div>
+            <div>
+                <img src="img/icone-desenho.svg" alt="">
+                <span>desenho</span>
+            </div>
+            <div>
+                <img src="img/icone-forma.svg" alt="">
+                <span>forma</span>
+            </div>
+            <div>
+                <img src="img/icone-entrega.svg" alt="">
+                <span>entrega</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="colecoes" class="dark">
+        <h2 class="section-title">Quatro coleções, uma por estação</h2>
+
+        <table>
+            <caption>Edições abertas</caption>
+            <thead>
+                <tr>
+                    <th>Coleção</th>
+                    <th>Peça</th>
+                    <th>Edição</th>
+                    <th>Prazo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Névoa</td>
+                    <td>Vaso baixo</td>
+                    <td>40 un.</td>
+                    <td>3 semanas</td>
+                </tr>
+
+                <tr>
+                    <td>Névoa</td>
+                    <td>Prato fundo</td>
+                    <td>60 un.</td>
+                    <td>3 semanas</td>
+                </tr>
+
+                <tr>
+                    <td>Sal</td>
+                    <td>Luminária de mesa</td>
+                    <td>25 un.</td>
+                    <td>5 semanas</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Abrimos as encomendas quatro vezes por ano e fechamos quando a edição
+            acaba. Nada é refeito depois: o molde é quebrado e a coleção seguinte
+            começa do papel em branco.
+        </p>
+        <p>
+            Os prazos acima contam a partir da confirmação. O frete é combinado
+            peça a peça, porque nenhuma delas viaja igual.
+        </p>
+
+        <a href="#">Pedir catálogo</a>
+
+    </section>
+
+    <section id="contato" class="light">
+        <h2 class="section-title">Peça p Catálogo</h2>
+        <p>
+            A edição de inverno abre em 14 de setembro. Deixe seu contato e enviamos
+            <br />
+             o catálogo impresso, com as medidas e os preços de cada peça.
+        </p>
+
+        <form>
+            <div class="form-inline">
+                <div>
+                    <label>Nome</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="text">
+                </div>
+            </div>
+            
+            <span class="label-block">O que te interessa</span>
+
+            <div class="input-radio">                
+                <input type="radio">
+                <label>Só o catálogo</label>
+                <input type="radio">
+                 <label>Uma peça específica</label>
+                <input type="radio">
+                 <label>Encomenda</label>
+            </div>
+
+            <span class="label-block">O que mais encaixa no seu estilo</span>
+            
+            <div>               
+                 <input type="checkbox">
+                <label>Terracota</label>
+                <input type="checkbox">
+                 <label>OFF white</label>
+                <input type="checkbox">
+                 <label>Black</label>
+            </div>
+
+            <div>
+                <label>Recado (opcional)</label>
+                    <textarea></textarea>
+            </div>
+            <button>Enviar Pedido</button>
+        </form>
+    </section>
+</body>
+
+</html>

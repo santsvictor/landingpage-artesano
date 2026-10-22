@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    color: #ededed;
+    background-color: #fdfcfb;
+    height: 100%;
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    z-index: 1; 
+}
+
+#hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -2; 
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111306c8;
+    opacity: 0.8; 
+    z-index: -1; 
+}
+
+#hero div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 30px;
+}
+
+#hero h1 {
+    font-weight: 400;
+    font-size: 120px;
+    letter-spacing: 0.14em;
+}
+
+#hero h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1em;
+    background-color: rgba(255, 255, 255, 0.04); 
+    padding: 8px 24px; 
+}
+
+#hero h2::before,
+#hero h2::after {
+    content: "";
+    display: block;
+    width: 60px; 
+    border-top: 2px solid #6f7276; 
+}
+
+#hero h2::before , #hero h2::after {
+    margin-right: 10px;
+}
+
+#hero p {
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.30em;
+}
+
+span {
+  font-size: 20px;  
+}
+/*nav*/
+.menu {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    
+    background-color: #ffffffac;
+}
+
+/*ul*/
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/*li*/
+.menu-item {
+
+}
+
+/*a*/
+.menu-link {
+    text-decoration: none;
+    color: #6a6a6a;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#menu-logo a {
+    border: 1px solid black;
+    display: block;
+    padding: 5px  10px;
+    text-align: center;
+    color: #000;
+    letter-spacing: 0;
+
+}
+#menu-logo a:hover {
+    color: #6a6a6a;
+    border-color: #6a6a6a;
+}
+/* SECTIONS*/
+section.light {
+    color: #000;
+    background-color: #f4f4f5;
+}
+section.dark {
+    background-color: black;
+    color: #f4f4f5;
+}
+section.section-title {
+    letter-spacing: 0.10em;
+}
+
+
+/*estudio*/
+#estudio {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#estudio-itens div {
+display:flex ;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+#estudio p{
+    max-width: 400px;
+    text-align: justify     ;
+}
+#estudio-itens {
+    display: flex;
+    gap: 100px;
+}
+#estudio-itens div img {
+    width:  30px;
+ 
+}
+
+#colecoes {
+    min-height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0;
+    
+}
+
+#colecoes table caption{
+    margin-bottom: 30px;
+}
+
+#colecoes table {
+    width: 90%;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+#colecoes table th, #colecoes table td{
+    text-align: left;
+    padding: 20px;
+    border-top: 1px solid #3a3d41;
+    border-bottom: 1px solid #3a3d41;
+}
+
+#colecoes p{
+    text-align: center;
+    font-size: 24px;
+    max-width: 600px;
+}
+
+#colecoes a{
+    text-decoration: none;
+    color: #f4f4f5;
+    border: 1px solid #f4f4f5;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 24px;
+
+ }
+
+
+
+ #contato{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+ }
+
+ #contato form .form-inline{
+    display: flex;
+    gap: 10px;
+ }
+
+ #contato form .form-inline label, form .label-block{
+    display: block;
+    margin: 15px 0;
+ }
+
+
+form .form-inline input, form .form-inline div{
+    width: 100%;
+}
+
+form input, form textarea{
+    padding: 8px;
+}
+
+form .input-radio, form .input-checkbox{
+    display: flex;
+    gap: 5px;
+}
